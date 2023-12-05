@@ -2,7 +2,6 @@
  
 
  
- 
 
  
  #main-nav ul  {
@@ -10,6 +9,9 @@
    text-align: center;
  
    text-decoration: none;
+   background-color: black;
+   height: 30px;
+ 
   
   
 
@@ -20,8 +22,9 @@
     text-decoration: none;
     text-align: end;
     display: inline;
-    color: black;
-    display: inline;
+    color: rgb(251, 244, 244);
+    
+  
    
 
 
@@ -37,7 +40,7 @@
     
     
     padding-top: 0px;
-    margin-top: 0px;
+    margin-top: 2px;
    
     align-items: center;
  }
