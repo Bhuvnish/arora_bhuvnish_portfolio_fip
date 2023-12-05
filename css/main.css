@@ -1,0 +1,130 @@
+#main-nav ul {
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+#main-nav div ul li a {
+  text-decoration: none;
+  text-align: end;
+  display: inline;
+  color: black;
+  display: inline;
+}
+
+.logo {
+  text-align: center;
+  display: inline;
+  padding-top: 0px;
+  margin-top: 0px;
+  align-items: center;
+}
+
+#lo h2 {
+  margin-top: 20px;
+}
+
+#lo h3 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.blackbox {
+  background-color: black;
+  height: 400px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.para {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+@media screen and (max-width: 771px) {
+  /* Your styles for screens wider than 600px go here */
+  .blackbox {
+    background-color: black;
+    height: 300px;
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 300px;
+  }
+}
+#profession {
+  margin-top: 40px;
+}
+
+#designer {
+  color: black;
+  border-radius: 30px;
+  text-align: center;
+  padding: 4px 40px 4px 4px;
+  border: 2px solid red;
+}
+
+#developer {
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  text-align: center;
+  padding: 4px 40px 4px 4px;
+  border: 2px solid red;
+}
+
+#bio h2 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: red;
+}
+
+#bio p {
+  font-size: 30px;
+}
+
+#bio {
+  box-shadow: 20px 20px 50px 20px;
+  margin-top: 40px;
+}
+
+#skills {
+  border: 3px solid red;
+  margin-top: 70px;
+  border-radius: 20px;
+}
+
+#skills h3 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  color: red;
+}
+
+#design h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#design p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#dev h5 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#dev p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=main.css.map */
