@@ -34,7 +34,7 @@
       border-radius: 30px;
       text-align: center;
       padding: 4px 40px 4px 4px;
-      border: 2px solid red;
+      border: 2px solid orange;
   }
   
   
@@ -44,7 +44,7 @@
       border-radius: 30px;
       text-align: center;
       padding: 4px 40px 4px 4px;
-      border: 2px solid red;
+      border: 2px solid orange;
   }
   
    
@@ -53,19 +53,21 @@
   #bio h2 {
       text-align: center;
       margin-top: 60px;
-      font-size: 30px;
+      font-size: 50px;
       margin-bottom: 50px;
-      color: red;
+      color: orange;
+   
   
   }
       
   #bio p {
-      font-size: 30px;
+      font-size: 25px;
   }
   
   #bio {
-      box-shadow: 20px 20px 50px 20px ;
+      box-shadow: 2px 2px 5px 2px ;
       margin-top: 40px;
+      border: 2px solid orange;
       
      
   }
@@ -73,7 +75,7 @@
   
   
   #skills {
-      border: 3px solid red;
+    border: 2px solid orange;
       margin-top: 70px;
       border-radius: 20px;
       
@@ -84,7 +86,7 @@
       font-size: 50px;
       text-align: center;
       margin-top: 50px;
-      color: red;
+      color: orange;
   
   }
   #design h4{

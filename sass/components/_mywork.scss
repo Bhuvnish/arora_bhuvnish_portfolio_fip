@@ -1,0 +1,60 @@
+
+#mywork h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: orange;
+    
+ }
+#mywork h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.image {
+    position: relative;
+    margin-top: 60px;
+    background-image: url(../images/EARBUD-DESKTOP.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+#loadmore a {
+    text-align: center;
+    color: azure;
+    background-color: orange;
+    border: 2px white solid;
+    font-size: 40px;
+    text-decoration: none;
+
+   
+}
+#loadmore {
+    text-align: end;
+    margin-top: 40px;
+    
+}
+
+@media screen and (max-width: 607px){
+  .blackbox{
+    width: 200px;
+  }
+  #loadmore a {
+    text-align: center;
+    color: azure;
+    background-color: orange;
+    border: 2px white solid;
+    font-size: 20px;
+    text-decoration: none;
+
+   
+}
+
+  
+}
