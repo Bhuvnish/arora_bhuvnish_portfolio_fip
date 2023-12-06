@@ -162,6 +162,10 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
+#explode-view {
+  max-width: 100%;
+  /* width: 100vw; */
+} 
 #mywork h2 {
   text-align: center;
   font-size: 40px;
