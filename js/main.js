@@ -16,17 +16,24 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('in-view');
-          }
-      });
-  });
+    const options = {
+        root: null,
+        rootMargin: '5px',
+        threshold: 0.5
+    };
 
-  document.querySelectorAll('.grid-item').forEach(item => {
-      observer.observe(item);
-  });
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    document.querySelectorAll('.grid-item').forEach(item => {
+        observer.observe(item);
+    });
 });
 
 })();
