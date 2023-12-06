@@ -31,7 +31,7 @@
     color: azure;
     background-color: orange;
     border: 2px white solid;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
 
    
@@ -73,3 +73,17 @@
 
   
 }
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.grid-item {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.grid-item.in-view {
+    opacity: 1;
+}
+

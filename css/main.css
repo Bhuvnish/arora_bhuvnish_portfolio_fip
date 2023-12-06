@@ -2,7 +2,7 @@
   list-style: none;
   text-align: center;
   text-decoration: none;
-  background-color: black;
+  background-color: rgb(80, 66, 16);
   height: 30px;
 }
 
@@ -11,6 +11,39 @@
   text-align: end;
   display: inline;
   color: rgb(251, 244, 244);
+}
+
+nav {
+  position: fixed;
+  z-index: 3;
+}
+
+#footer {
+  color: rgb(205, 205, 205);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #584b18; /* Change color on hover */
 }
 
 .logo {
@@ -30,34 +63,6 @@
   margin-bottom: 40px;
   margin-top: 30px;
   text-align: center;
-}
-
-#footer {
-  color: orange;
-  padding: 20px;
-  text-align: center;
-  margin-top: 40px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: orange;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #584b18; /* Change color on hover */
 }
 
 .blackbox {
@@ -115,9 +120,7 @@ nav a:hover {
 }
 
 #bio {
-  box-shadow: 2px 2px 5px 2px;
   margin-top: 40px;
-  border: 2px solid orange;
 }
 
 #skills {
@@ -184,7 +187,7 @@ nav a:hover {
   color: azure;
   background-color: orange;
   border: 2px white solid;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: none;
 }
 
@@ -218,6 +221,19 @@ nav a:hover {
     text-decoration: none;
   }
 }
+html, body {
+  scroll-behavior: smooth;
+}
+
+.grid-item {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.grid-item.in-view {
+  opacity: 1;
+}
+
 #contact h3 {
   text-align: center;
   font-size: 50px;
