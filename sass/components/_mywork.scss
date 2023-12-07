@@ -10,37 +10,51 @@
 #mywork h3{
     text-align: center;
     font-size: 35px;
+    margin-bottom: 30px;
 }
 
 
 .image {
     position: relative;
     
-    background-image: url(../images/EARBUD-DESKTOP.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     
 
 }
+.img:hover{
+    opacity: 0.9;
 
-
-
-
-#loadmore a {
-    text-align: center;
-    color: azure;
-    background-color: orange;
-    border: 2px white solid;
-    font-size: 30px;
-    text-decoration: none;
-
-   
-}
-#loadmore {
-    text-align: end;
-    margin-top: 40px;
     
 }
+
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+  }
+  
+  .image::before {
+    content: '';
+    
+    background-color: rgba(0, 0, 0, 2); 
+    opacity: 0; 
+    transition: opacity 0.3s ease black; 
+  }
+  
+  .image:hover img,
+  .image:hover::before {
+    opacity: 0.5; 
+    transform: scale(1.02);
+  }
+
+
+
+
+
+
 .text  a {
     color: rgb(248, 237, 237);
     font-size: 25px;
@@ -55,24 +69,11 @@
 }
 
 
-@media screen and (max-width: 607px){
-  .blackbox{
-    width: 200px;
-  }
-  #loadmore a {
-    text-align: center;
-    color: azure;
-    background-color: orange;
-    border: 2px white solid;
-    font-size: 20px;
-    text-decoration: none;
 
-   
-}
 
 
   
-}
+
 
 html, body {
     scroll-behavior: smooth;
@@ -86,4 +87,16 @@ html, body {
 .grid-item.in-view {
     opacity: 1;
 }
+
+
+#mywork{
+    
+    height: 700px; /* Adjust the height as needed */
+    overflow-y: auto;
+    
+    margin-top: 40px;
+}
+
+
+
 
