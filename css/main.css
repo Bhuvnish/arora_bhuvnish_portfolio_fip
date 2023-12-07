@@ -2,8 +2,8 @@
   list-style: none;
   text-align: center;
   text-decoration: none;
-  background-color: rgb(80, 66, 16);
-  height: 30px;
+  background-color: red;
+  height: 40px;
 }
 
 #main-nav div ul li a {
@@ -11,18 +11,13 @@
   text-align: end;
   display: inline;
   color: rgb(251, 244, 244);
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 nav {
   position: fixed;
   z-index: 3;
-}
-
-#footer {
-  color: rgb(205, 205, 205);
-  padding: 20px;
-  text-align: center;
-  margin-top: 40px;
 }
 
 nav ul {
@@ -38,12 +33,41 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
 }
 
 nav a:hover {
-  color: #584b18; /* Change color on hover */
+  color: #582d18; /* Change color on hover */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  padding-top: 60px;
+  background-color: orangered;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.social-links a:hover {
+  color: #0077B5;
+}
+
+.social-links a.facebook:hover {
+  color: #3b5998;
 }
 
 .logo {
@@ -270,6 +294,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-bottom: 40px;
 }
 
 input[type=submit]:hover {
