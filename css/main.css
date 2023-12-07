@@ -2,7 +2,7 @@
   list-style: none;
   text-align: center;
   text-decoration: none;
-  background-color: orangered;
+  background-color: rgb(78, 108, 173);
   border-radius: 10px;
   height: 40px;
   width: 1100px;
@@ -15,6 +15,7 @@
   color: rgb(251, 244, 244);
   margin-top: 10px;
   padding-top: 10px;
+  font-family: "Prata", serif;
 }
 
 nav {
@@ -86,34 +87,13 @@ footer {
 }
 
 #lo h3 {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 40px;
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
+  font-family: "Whisper", cursive;
 }
 
-.blackbox {
-  background-color: black;
-  height: 400px;
-  padding-right: 0px;
-  margin-right: 0px;
-}
-
-.para {
-  margin-left: 0px;
-  padding-left: 0px;
-}
-
-@media screen and (max-width: 771px) {
-  /* Your styles for screens wider than 600px go here */
-  .blackbox {
-    background-color: black;
-    height: 300px;
-    padding-right: 0px;
-    margin-right: 0px;
-    width: 300px;
-  }
-}
 #profession {
   margin-top: 40px;
 }
@@ -123,7 +103,8 @@ footer {
   border-radius: 30px;
   text-align: center;
   padding: 4px 40px 4px 4px;
-  border: 2px solid orange;
+  border: 2px solid rgb(132, 0, 255);
+  font-family: "Prata", serif;
 }
 
 #developer {
@@ -131,7 +112,8 @@ footer {
   border-radius: 30px;
   text-align: center;
   padding: 4px 40px 4px 4px;
-  border: 2px solid orange;
+  border: 2px solid rgb(255, 0, 179);
+  font-family: "Prata", serif;
 }
 
 #bio h2 {
@@ -139,11 +121,17 @@ footer {
   margin-top: 60px;
   font-size: 50px;
   margin-bottom: 50px;
-  color: orange;
+  color: rgb(0, 0, 0);
+  font-family: "Prata", serif;
 }
 
-#bio p {
-  font-size: 25px;
+#bio h3 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: rgb(78, 108, 173);
+  font-family: "Whisper", cursive;
 }
 
 #bio {
@@ -151,7 +139,7 @@ footer {
 }
 
 #skills {
-  border: 2px solid orange;
+  border: 2px solid rgb(78, 108, 173);
   margin-top: 70px;
   border-radius: 20px;
 }
@@ -160,7 +148,8 @@ footer {
   font-size: 50px;
   text-align: center;
   margin-top: 50px;
-  color: orange;
+  color: rgb(78, 108, 173);
+  font-family: "Prata", serif;
 }
 
 #design h4 {
@@ -168,12 +157,14 @@ footer {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-family: "Prata", serif;
 }
 
 #design p {
   text-align: center;
   font-size: 15px;
   margin-bottom: 20px;
+  font-family: "Prata", serif;
 }
 
 #dev h5 {
@@ -181,12 +172,14 @@ footer {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-family: "Prata", serif;
 }
 
 #dev p {
   text-align: center;
   font-size: 15px;
   margin-bottom: 20px;
+  font-family: "Prata", serif;
 }
 
 #explode-view {
@@ -198,13 +191,16 @@ footer {
   font-size: 40px;
   margin-top: 60px;
   margin-bottom: 20px;
-  color: orange;
+  color: rgb(0, 0, 0);
+  font-family: "Prata", serif;
 }
 
 #mywork h3 {
   text-align: center;
   font-size: 35px;
   margin-bottom: 30px;
+  color: rgb(78, 108, 173);
+  font-family: "Whisper", cursive;
 }
 
 .image {

@@ -1,25 +1,5 @@
-.blackbox{
-    background-color: black;
-    height: 400px;
-    padding-right: 0px;
-    margin-right: 0px;
-  }
-  
-  .para {
-    margin-left: 0px;
-    padding-left: 0px;
-  }
-  @media screen and (max-width: 771px) {
-    /* Your styles for screens wider than 600px go here */
-    .blackbox{
-      background-color: black;
-      height: 300px;
-      padding-right: 0px;
-      margin-right: 0px;
-      width: 300px;
-    } 
-  }
-  
+
+ 
   
   
   
@@ -34,7 +14,8 @@
       border-radius: 30px;
       text-align: center;
       padding: 4px 40px 4px 4px;
-      border: 2px solid orange;
+      border: 2px solid rgb(132, 0, 255);
+      font-family: 'Prata', serif;
   }
   
   
@@ -44,7 +25,8 @@
       border-radius: 30px;
       text-align: center;
       padding: 4px 40px 4px 4px;
-      border: 2px solid orange;
+      border: 2px solid rgb(255, 0, 179);
+      font-family: 'Prata', serif;
   }
   
    
@@ -55,14 +37,24 @@
       margin-top: 60px;
       font-size: 50px;
       margin-bottom: 50px;
-      color: orange;
+      color: rgb(0, 0, 0);
+      font-family: 'Prata', serif;
    
   
   }
+
+  #bio h3 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: rgb(78, 108, 173);
+    font-family: 'Whisper', cursive;
+ 
+
+}
       
-  #bio p {
-      font-size: 25px;
-  }
+
   
   #bio {
      
@@ -75,7 +67,7 @@
   
   
   #skills {
-    border: 2px solid orange;
+    border: 2px solid rgb(78, 108, 173);
       margin-top: 70px;
       border-radius: 20px;
       
@@ -86,7 +78,8 @@
       font-size: 50px;
       text-align: center;
       margin-top: 50px;
-      color: orange;
+      color:rgb(78, 108, 173);
+      font-family: 'Prata', serif;
   
   }
   #design h4{
@@ -95,6 +88,7 @@
       text-align: center;
       margin-top: 30px;
       margin-bottom: 30px;
+      font-family: 'Prata', serif;
       
   
   
@@ -103,6 +97,7 @@
       text-align: center;
       font-size: 15px;
       margin-bottom: 20px;
+      font-family: 'Prata', serif;
   }
   
   #dev h5{
@@ -111,6 +106,7 @@
       text-align: center;
       margin-top: 30px;
       margin-bottom: 30px;
+      font-family: 'Prata', serif;
       
   
   
@@ -119,6 +115,7 @@
       text-align: center;
       font-size: 15px;
       margin-bottom: 20px;
+      font-family: 'Prata', serif;
   }
   
   #explode-view {
