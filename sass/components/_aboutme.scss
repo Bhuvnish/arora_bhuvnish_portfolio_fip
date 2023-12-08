@@ -122,4 +122,107 @@
     max-width: 100%;
     /* width: 100vw; */
   }/*# sourceMappingURL=main.css.map */
+
+
+        @media screen and (max-width: 558px){
+
+            #profession{
+                margin-top: 40px;
+            }
+            
+            
+            
+             
+            
+            
+            #bio h2 {
+                text-align: center;
+                margin-top: 60px;
+                font-size: 30px;
+                margin-bottom: 50px;
+                color: rgb(0, 0, 0);
+                font-family: 'Prata', serif;
+             
+            
+            }
+          
+            #bio h3 {
+              text-align: center;
+              margin-top: 60px;
+              font-size: 30px;
+              margin-bottom: 50px;
+              color: rgb(78, 108, 173);
+              font-family: 'Whisper', cursive;
+           
+          
+          }
+                
+          
+            
+            #bio {
+               
+                margin-top: 40px;
+                
+                
+               
+            }
+            
+            
+            
+            #skills {
+              border: 2px solid rgb(78, 108, 173);
+                margin-top: 70px;
+                border-radius: 20px;
+                
+               
+            }
+            
+            #skills h3 {
+                font-size: 30px;
+                text-align: center;
+                margin-top: 50px;
+                color:rgb(78, 108, 173);
+                font-family: 'Prata', serif;
+            
+            }
+            #design h4{
+            
+                font-size: 20px;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-family: 'Prata', serif;
+                
+            
+            
+            }
+            #design p {
+                text-align: center;
+                font-size: 15px;
+                margin-bottom: 20px;
+                font-family: 'Prata', serif;
+            }
+            
+            #dev h5{
+            
+                font-size: 20px;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-family: 'Prata', serif;
+                
+            
+            
+            }
+            #dev  p {
+                text-align: center;
+                font-size: 15px;
+                margin-bottom: 20px;
+                font-family: 'Prata', serif;
+            }
+
+
+
+
+        }
   

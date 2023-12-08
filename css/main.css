@@ -4,8 +4,6 @@
   text-decoration: none;
   background-color: rgb(78, 108, 173);
   border-radius: 10px;
-  height: 40px;
-  width: 1100px;
 }
 
 #main-nav div ul li a {
@@ -13,43 +11,101 @@
   text-align: end;
   display: inline;
   color: rgb(251, 244, 244);
-  margin-top: 10px;
-  padding-top: 10px;
   font-family: "Prata", serif;
 }
 
-nav {
-  position: fixed;
-  z-index: 3;
+#sticky-nav-con {
+  position: sticky;
+  background-color: rgb(78, 108, 173);
+  top: 0px;
+  border-bottom: solid 1px #c3c3c3;
+  z-index: 1;
+  /* had to set z-index as css filters was causing images to overlap, see below */
 }
 
-nav ul {
+#main-nav button {
+  width: 20px;
+  height: 20px;
+  background: url(../images/burger.svg) no-repeat center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+  border: 0;
+}
+
+#main-nav button.expanded {
+  transform: rotate(90deg);
+}
+
+#burger-con {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+#burger-con.slide-toggle {
+  display: block;
+}
+
+#main-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-nav li {
-  display: inline;
-  margin-right: 20px;
+#main-nav ul li a:hover {
+  color: #9a2018;
 }
 
-nav a {
-  text-decoration: none;
+#main-nav ul li {
+  border-bottom: 1px solid #efefef;
 }
 
-nav a:hover {
-  color: #582d18; /* Change color on hover */
+#main-nav ul li:first-child {
+  border-top: 1px solid #efefef;
 }
 
+#main-nav ul li:last-child {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 558px) {
+  #sticky-nav-con {
+    position: sticky;
+    background-color: rgb(78, 108, 173);
+    top: 0px;
+    border-bottom: solid 1px #c3c3c3;
+    z-index: 1;
+    /* had to set z-index as css filters was causing images to overlap, see below */
+  }
+  #button {
+    display: none;
+  }
+  #burger-con {
+    display: block;
+    font-size: 12px;
+  }
+  #burger-con ul li, #burger-con ul li:first-child {
+    border: none;
+    display: inline;
+  }
+  #main-nav ul li a {
+    display: inline;
+  }
+  #burger-con ul li {
+    margin-right: 10px;
+  }
+  #burger-con ul li:last-child {
+    margin-right: 0;
+  }
+}
 footer {
-  background-color: #333;
+  background-color: rgb(78, 108, 173);
   color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 60px;
   padding-top: 60px;
-  background-color: orangered;
   border-radius: 20px;
 }
 
@@ -94,6 +150,15 @@ footer {
   font-family: "Whisper", cursive;
 }
 
+@media screen and (max-width: 558px) {
+  #lo h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Whisper", cursive;
+  }
+}
 #profession {
   margin-top: 40px;
 }
@@ -186,6 +251,68 @@ footer {
   max-width: 100%;
   /* width: 100vw; */
 } 
+@media screen and (max-width: 558px) {
+  #profession {
+    margin-top: 40px;
+  }
+  #bio h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: rgb(0, 0, 0);
+    font-family: "Prata", serif;
+  }
+  #bio h3 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: rgb(78, 108, 173);
+    font-family: "Whisper", cursive;
+  }
+  #bio {
+    margin-top: 40px;
+  }
+  #skills {
+    border: 2px solid rgb(78, 108, 173);
+    margin-top: 70px;
+    border-radius: 20px;
+  }
+  #skills h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(78, 108, 173);
+    font-family: "Prata", serif;
+  }
+  #design h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Prata", serif;
+  }
+  #design p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: "Prata", serif;
+  }
+  #dev h5 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Prata", serif;
+  }
+  #dev p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: "Prata", serif;
+  }
+}
 #mywork h2 {
   text-align: center;
   font-size: 40px;
@@ -240,8 +367,10 @@ footer {
   left: 43%;
   text-decoration: none;
   border: 2px solid white;
-  background-color: orange;
+  background-color: rgb(78, 108, 173);
+  border-radius: 5px;
   text-align: center;
+  font-family: "Prata", serif;
 }
 
 html, body {
@@ -263,6 +392,35 @@ html, body {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 558px) {
+  #mywork h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Prata", serif;
+  }
+  #mywork h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: rgb(78, 108, 173);
+    font-family: "Whisper", cursive;
+  }
+  .text a {
+    color: rgb(248, 237, 237);
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: rgb(78, 108, 173);
+    border-radius: 5px;
+    text-align: center;
+  }
+}
 #contact h3 {
   text-align: center;
   font-size: 50px;
@@ -271,7 +429,7 @@ html, body {
 
 #contact h2 {
   font-size: 20px;
-  border: 2px solid orange;
+  border: 2px solid rgb(78, 108, 173);
   margin-top: 50px;
   margin-bottom: 30px;
   text-align: center;
@@ -281,7 +439,7 @@ html, body {
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid orange;
+  border: 1px solid rgb(78, 108, 173);
   border-radius: 6px;
   margin-top: 7px;
   margin-bottom: 17px;
@@ -289,7 +447,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: orange;
+  background-color: rgb(78, 108, 173);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -300,4 +458,12 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #7d0202;
+}
+
+@media screen and (max-width: 558px) {
+  #contact h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */

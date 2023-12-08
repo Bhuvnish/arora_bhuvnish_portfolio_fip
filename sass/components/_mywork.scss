@@ -69,9 +69,14 @@
     left: 43%;
     text-decoration: none;
     border: 2px solid white;
-    background-color: orange;
+    background-color:rgb(78, 108, 173) ;
+    border-radius: 5px;
     
     text-align: center;
+    font-family: 'Prata', serif;
+    
+    
+
 }
 
 
@@ -104,6 +109,41 @@ html, body {
     
 }
 
+@media screen and (max-width: 558px){
 
+    #mywork h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        color: rgb(0, 0, 0);
+        font-family: 'Prata', serif;
+        
+       
+        
+     }
+    #mywork h3{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 30px;
+        color: rgb(78, 108, 173);
+       
+        font-family: 'Whisper', cursive;
+    }
+    .text  a {
+        color: rgb(248, 237, 237);
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        text-decoration: none;
+        border: 2px solid white;
+        background-color:rgb(78, 108, 173) ;
+        border-radius: 5px;
+        
+        text-align: center;
+    }
+
+}
 
 
