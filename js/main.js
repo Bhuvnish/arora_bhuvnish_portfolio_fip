@@ -15,26 +15,27 @@
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const options = {
-        root: null,
-        rootMargin: '5px',
-        threshold: 0.5
-    };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, options);
 
-    document.querySelectorAll('.grid-item').forEach(item => {
-        observer.observe(item);
+const options = {
+    root: null,
+    rootMargin: '5px',
+    threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+        }
     });
+}, options);
+
+document.querySelectorAll('.grid-item').forEach(item => {
+    observer.observe(item);
 });
+
 
 
 
@@ -55,7 +56,7 @@ for (let i=0; i<frameCount; i++) {
     //const img = new Image();
     const img = document.createElement("img");
     //need to recreate a string: images/explode_0001.webp
-    img.src = `images/base_${(i+1).toString().padStart(5, '0')}.jpg`;
+    img.src = `images/animations_${(i+1).toString().padStart(5, '0')}.jpg`;
     images.push(img);
 }
 //console.table(images)
@@ -87,8 +88,23 @@ function render() {
 
 
 
+//burger menu
 
-//tetst
+(function(){
+	"use strict";	
+	console.log("fired");
+
+	let button = document.querySelector("#button");
+	let burgerCon = document.querySelector("#burger-con")
+
+	function hamburgerMenu() {
+		burgerCon.classList.toggle("slide-toggle");
+		button.classList.toggle("expanded");
+	};
+
+
+	button.addEventListener("click", hamburgerMenu, false);		
+})();
 
 
 

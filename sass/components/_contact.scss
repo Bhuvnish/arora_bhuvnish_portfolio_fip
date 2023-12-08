@@ -12,7 +12,7 @@
 
   #contact h2 {
     font-size: 20px;
- border: 2px solid orange;
+ border: 2px solid rgb(78, 108, 173);
     margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
@@ -26,7 +26,7 @@
   input[type=text], select, textarea {
     width: 100%; 
     padding: 12px;  
-    border: 1px solid orange;
+    border: 1px solid rgb(78, 108, 173);
     border-radius: 6px; 
     
     margin-top: 7px; 
@@ -36,7 +36,7 @@
   
   
   input[type=submit] {
-    background-color: orange;
+    background-color: rgb(78, 108, 173);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -49,4 +49,14 @@
   input[type=submit]:hover {
     background-color: #7d0202;
   }
-  
+  @media screen and (max-width: 558px){
+
+    #contact h3 {
+      text-align: center;
+     
+      font-size: 30px;
+      margin-top: 40px;
+    }
+
+
+  }
