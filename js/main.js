@@ -108,6 +108,24 @@ function render() {
 
 
 
+//nav code goes here
+
+
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    // Prevent the default link behavior (e.g., page reload)
+    event.preventDefault();
+
+    // Get the target section ID from the link's href attribute
+    const targetSectionId = link.getAttribute("href").substring(1);
+
+    // Change to the selected section
+    changeSection(targetSectionId);
+  });
+});
+
 })();
 
 	
